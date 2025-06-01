@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="heading1"></h1>
+    <p id="paragraph1"></p>
+    <p id="paragraph2"></p>
+    <p id="paragraph3"></p>
+    <p id="paragraph4"></p>
+
+    <script>
+        var text1;
+        var text2;
+        var text3;
+
+        var numA = 7;
+        var numB = 10;
+        var numC = 20;
+        var numD = 80;
+
+        text1 = "Hello everyone on planet Earth";
+        text2 = "I love learning JS.";
+        text3 = " JS is fun to learn!"
+
+        document.getElementById("heading1").innerHTML = (text1);
+        // text concatination (text2 + text3)
+        document.getElementById("paragraph1").innerHTML = (text2 + text3);
+
+        document.getElementById("paragraph2").innerHTML = (numA + numB);
+
+        document.getElementById("paragraph3").innerHTML = ("This answer is:" + numC * numD);
+        //  The + in text works as a concatinator
+
+        document.getElementById("paragraph4").innerHTML = (numA + " X " + numD + " = " + numA * numD );
+    </script>
+</body>
+
+</html>

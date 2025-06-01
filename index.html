@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="heading1"></h1>
+    <p id="paragraph1"></p>
+    <p id="paragraph2"></p>
+    <p id="paragraph3"></p>
+    <p id="paragraph4"></p>
+    <p id="paragraph5"></p>
+    <p id="paragraph6"></p>
+
+    <script>
+        document.getElementById("heading1").innerHTML = ("This is JavaScript");
+        document.getElementById("paragraph1").innerHTML = ("I'm having fun!");
+        document.getElementById("paragraph2").innerHTML = (5 + 6);
+        document.getElementById("paragraph3").innerHTML = ("5 + 6");
+
+        // Numbers are always displayed without DOUBLE QUOTES
+        document.getElementById("paragraph4").innerHTML = (5 + 6);
+
+        // It is not 56 but it's a 5 and 6 (JS recognises them as text. 
+        document.getElementById("paragraph5").innerHTML = ("5" + 6);
+        // The + sign acts as a concatination operator - used to join 2 sections of text. Use to add to numbers, or for text - joinig 2 concatinators of text )
+        document.getElementById("paragraph5").innerHTML = ("JavaScript" + " is fun");
+
+    </script>
+</body>
+
+</html>

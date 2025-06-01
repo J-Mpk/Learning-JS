@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="outputText"></p>
+    <p id="outputText2"></p>
+
+    <script>
+        // put the var someVariable at the top in order for the fuction to work
+        var someVariable = 100;
+        someFunction();
+
+        function someFunction() {
+
+        }
+        // Outside the function
+        document.getElementById("outputText").innerHTML = someVariable;
+
+        var someVariable = 100;
+        someFunction();
+
+        function someFunction() {
+            // inside the function
+            document.getElementById("outputText2").innerHTML = someVariable;
+        }
+       
+
+    </script>
+</body>
+
+</html>
